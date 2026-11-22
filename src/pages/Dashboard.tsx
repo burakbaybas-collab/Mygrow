@@ -185,7 +185,7 @@ function QuickPlanned({ icon, label: text }: { icon: ReactNode; label: string })
 export function BatchCard({ batch: b, harvestKg, stale }: { batch: Batch; harvestKg?: number; stale?: boolean }) {
   const days = daysSince(b.inoculation_date ?? b.start_date)
   return (
-    <Link to={`/partiler/${b.id}`} className="block rounded-[var(--radius-card)] border border-line bg-surface p-4 shadow-sm transition hover:border-secondary/60">
+    <Link to={`/partiler/${b.id}`} className="block min-w-0 rounded-[var(--radius-card)] border border-line bg-surface p-4 shadow-sm transition hover:border-secondary/60">
       <div className="flex items-start justify-between gap-2">
         <div className="min-w-0">
           <p className="truncate font-semibold">{b.batch_code}</p>

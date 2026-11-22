@@ -47,7 +47,7 @@ export default function SpeciesList() {
           <Link
             key={s.id}
             to={`/turler/${s.id}`}
-            className="rounded-[var(--radius-card)] border border-line bg-surface p-4 shadow-sm transition hover:border-secondary/60"
+            className="min-w-0 rounded-[var(--radius-card)] border border-line bg-surface p-4 shadow-sm transition hover:border-secondary/60"
           >
             <div className="flex items-start justify-between gap-2">
               <div>
